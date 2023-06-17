@@ -120,7 +120,7 @@ p{
 .contact-form textarea{
     border-radius: 5px;
     font-size: .85rem;
-    font-family: var(--font);
+    /*font-family: var(--font);*/
 }
 
 .contact-form input{
