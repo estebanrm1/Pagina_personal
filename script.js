@@ -29,7 +29,7 @@
       $loader.classList.remove("none");
       fetch("https://formsubmit.co/solsel90@gmail.com", {
          method: "POST",
-         body: new FormData(e.target),
+         body: new FormData(e.target)
       })
          .then((res) => (res.ok ? res.json() : Promise.reject(res)))
          .then((json) => {
@@ -46,7 +46,7 @@
          .finally(() => {
             $loader.classList.add("none");
             setTimeout(() => {
-               location.hash = "#Close";
+               location.hash = "#close";
             }, 3000);
          });
    });
